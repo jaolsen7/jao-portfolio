@@ -3,18 +3,34 @@ nav {
     color: black;
     display: flex;
     justify-content: space-between;
+    margin: 15px;
+}
+nav h1 {
+    font-size: 30px;
 }
 header h1 {
     display: block;
-    text-align: right;
-    background-image: url();
+    text-align: center;
+    background-image: url(https://cdn.pixabay.com/photo/2018/06/13/18/20/waves-3473335_960_720.jpg);
+    background-repeat: no-repeat;
+    background-position: 30px -200px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    font-size: 24px;
+    padding-top: 50px;
+    padding-bottom: 75px;
 }
-li {
+nav li {
     display: inline-block;
+    padding-left: 5px;
 }
 .box {
-    display:flex;
+    display: flex;
     background-image: url();
+    padding: 10px;
+}
+.box p {
+    flex: 1;
 }
 .box-title {
     font-size: 24px;
@@ -22,6 +38,8 @@ li {
     color: black;
     background-color: white;
     border-right: 2px solid black;
+    margin-right: 25px;
+    width: 32%;
 }
 @media screen and (max-width: 980px) {
     .box {
@@ -32,19 +50,28 @@ li {
         border-bottom:  2px solid black;
     }
 }
-.project-cards {
+.project {
     display: flex;
     flex-direction: column;
+    background-image: url(http://placekitten.com/200/300);
+    width: 50%;
+    height: 50%;
+}
+.sideproject {
+    background-image: url(http://placekitten.com/200/300);
+    background-repeat: no-repeat;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-#aboutme {
-
+#aboutme, #projects, #contactme {
+    background-color: white;
 }
 
-#projects {
-
-}
-
-#contactme {
-
+footer {
+    text-align: center;
+    line-height: 1.5;
 }
