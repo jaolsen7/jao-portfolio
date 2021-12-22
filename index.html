@@ -9,27 +9,41 @@
     <link rel="stylesheet" href="./assets/CSS/style.css">
 </head>
 <body>
-    <header>
+    <nav>
         <h1>Jason Olsen's Coding Portfolio</h1>
         <ol>
-            <li> <a href="#AboutMe">About Me</a></li>
-            <li> <a href="#Work">Work</a></li>
-            <li><a href="#ContactMe">Contact Me</a></li>
+            <li> <a href="#aboutme">About Me</a></li>
+            <li> <a href="#projects">Work</a></li>
+            <li><a href="#contactme">Contact Me</a></li>
             <li><a href="pdf of resume?????">Resume</a></li>
         </ol>
+    </nav>
+    <header>
+        <h1>Subtitle</h1>
     </header>
-
     <main>
-        <section class="projects">
+        <section id="aboutme">
             <figure class="box">
                 <h2 class="box-title">About Me</h2>
-                <p>Here is some info about me!</p>
+                <p>Here is some info about me! Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown.</p>
             </figure>
-            <figure>
+        </section>
+        <section id="projects">
+            <figure class="box">
                 <h2>Work</h2>
-                <div>I think use like 5 div here?????</div>
+            <div class="project-cards">
+                <div>project 1</div>
+                <div class="small-project-cards">
+                    <div>project 2</div>
+                    <div>project 3</div>
+                    <div>project 4</div>
+                    <div>project 5</div>
+                </div>
+            </div>
             </figure>
-            <figure>
+        </section>
+        <section id="contactme">
+            <figure class="box">
                 <h2>Contact Me</h2>
                 <ol>
                     <li><strong>Cell:</strong> (805)748-4171</li>
@@ -39,5 +53,9 @@
             </figure>
         </section>
     </main>
+
+    <footer>
+        <p>Made with love.</p>
+    </footer>
 </body>
 </html>

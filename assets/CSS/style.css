@@ -1,8 +1,19 @@
-.products {
-
+nav {
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+}
+header h1 {
+    display: block;
+    text-align: right;
+    background-image: url();
+}
+li {
+    display: inline-block;
 }
 .box {
-    color: white;
+    display:flex;
     background-image: url();
 }
 .box-title {
@@ -10,5 +21,30 @@
     padding: 10px;
     color: black;
     background-color: white;
-    width: 32%
+    border-right: 2px solid black;
+}
+@media screen and (max-width: 980px) {
+    .box {
+        flex-wrap: wrap;
+    }
+    .box-title {
+        border-right: 0;
+        border-bottom:  2px solid black;
+    }
+}
+.project-cards {
+    display: flex;
+    flex-direction: column;
+}
+
+#aboutme {
+
+}
+
+#projects {
+
+}
+
+#contactme {
+
 }
