@@ -1,0 +1,14 @@
+.products {
+
+}
+.box {
+    color: white;
+    background-image: url();
+}
+.box-title {
+    font-size: 24px;
+    padding: 10px;
+    color: black;
+    background-color: white;
+    width: 32%
+}
