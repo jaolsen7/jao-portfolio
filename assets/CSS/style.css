@@ -41,8 +41,7 @@ nav li {
     background-color: white;
     border-bottom: 2px solid black;
     margin-bottom: 25px;
-    position: static;
-    width: 32%;
+    width: 30%;
 }
 @media screen and (min-width: 980px) {
     .box {
@@ -53,26 +52,28 @@ nav li {
         border-right:  2px solid black;
     }
     .sideproject {
-        
+        flex-direction: row;
     }
 }
-.projects {
+#projects {
     display: flex;
+}
+.mainproject {
     flex-direction: column;
-    justify-content: flex-start;
-    flex-grow: 1;
-    background-image: url(http://placekitten.com/200/300);
+    justify-content: center;
+    width: 68%;
+    height: 30%;
     background-repeat: no-repeat;
     color: white;
 }
 .sideproject {
     display: flex;
-    flex-direction: row;
-    background-image: url(http://placekitten.com/200/300);
+  /*  background-image: url(http://placekitten.com/200/300); */
     background-repeat: no-repeat;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    flex-grow: 1;
+    width: 20%;
+    /* flex-grow: 1; */
     padding-top: 50px;
     color: white;
 }
