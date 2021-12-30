@@ -28,13 +28,15 @@ nav li {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    background-image: url();
     padding: 10px;
 }
 .box p {
     flex: 1;
 }
 .section-title {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     font-size: 24px;
     padding: 10px;
     color: black;
@@ -51,31 +53,26 @@ nav li {
         border-bottom: 0;
         border-right:  2px solid black;
     }
-    .sideproject {
-        flex-direction: row;
-    }
 }
 #projects {
-    display: flex;
+    /* only for id purposes */
 }
 .mainproject {
     flex-direction: column;
     justify-content: center;
-    width: 68%;
-    height: 30%;
+    align-items: center;
+    flex: 1;
+    margin-left: 25px;
     background-repeat: no-repeat;
-    color: white;
+    color: black;
 }
 .sideproject {
     display: flex;
+    flex-direction: row;
   /*  background-image: url(http://placekitten.com/200/300); */
     background-repeat: no-repeat;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    width: 20%;
     /* flex-grow: 1; */
-    padding-top: 50px;
-    color: white;
+    color: black;
 }
 
 #aboutme, #projects, #contactme {
