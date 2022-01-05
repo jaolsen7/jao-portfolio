@@ -31,7 +31,6 @@ div h1 {
     background-image: url(https://cdn.pixabay.com/photo/2018/06/13/18/20/waves-3473335_960_720.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    margin-bottom: 15px;
     font-size: 24px;
     padding-top: 50px;
     padding-bottom: 75px;
@@ -50,15 +49,6 @@ nav li {
     flex: 1;
 }
 
-@media screen and (min-width: 980px) {
-    .box {
-        flex-wrap: wrap;
-    }
-    .section-title {
-        border-bottom: 0;
-        border-right:  2px solid black;
-    }
-}
 #projects {
     /* only for id purposes */
 }
@@ -79,7 +69,6 @@ nav li {
     width: 95vw;
     height: auto;
     object-fit: contain;
-    align-items: center;
     margin-bottom: 10px;
 }
 .sideprojects {
@@ -88,11 +77,60 @@ nav li {
     flex-wrap: wrap;
     color: black;
     justify-content: space-evenly;
+    text-align: center;
 }
 .sideprojects img {
     width: 40vw;
     height: auto;
     object-fit: contain;
+}
+@media screen and (min-width: 980px) {
+    nav {
+        flex-direction: row;
+        align-items: center;
+    }
+    nav h1 {
+        font-size: 45px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    nav li {
+        justify-content: flex-end;
+        font-size: 20px;
+    }
+    .box {
+        flex-direction: row;
+    }
+    .box p {
+        margin-left: 15px;
+    }
+    .box li {
+        margin-left: 15px;
+    }
+    .section-title {
+        width: 30vw;
+        border-right: 2px solid black;
+        font-size: 30px;
+    }
+    .mainproject {
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-left: 15px;
+        font-size: 20px;
+    }
+    .mainproject img {
+        width: 66vw;
+        object-fit: contain;
+    }
+    .sideprojects {
+        justify-content: flex-end;
+        font-size: 20px;
+    }
+    .sideprojects img {
+        width: 33vw;
+        height: 25vh;
+        object-fit: contain;
+    }
 }
 #aboutme, #projects, #contactme {
     background-color: white;
