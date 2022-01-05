@@ -1,6 +1,13 @@
-nav {
+:root {
+    --dark: rgb(27, 26, 26);
+    --teal: #0af3ef;
+    --lightteal: #8beeee;
+    --orange: rgb(241, 116, 44);
+}
+* {
     background-color: white;
-    color: black;
+}
+nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -9,7 +16,11 @@ nav {
 }
 nav h1 {
     font-size: 30px;
-    
+    margin-bottom: 5px;
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: var(--teal);
+    color: var(--dark);
 }
 div h1 {
     display: flex;
