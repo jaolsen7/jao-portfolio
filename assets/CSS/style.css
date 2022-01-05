@@ -17,6 +17,7 @@ nav {
 nav h1 {
     font-size: 30px;
     margin-bottom: 5px;
+    line-height: 1.5;
     border: 2px solid black;
     border-radius: 15px;
     background-color: var(--teal);
@@ -33,7 +34,7 @@ div h1 {
     margin-bottom: 15px;
     font-size: 24px;
     padding-top: 50px;
-    padding-bottom: 75px; 
+    padding-bottom: 75px;
 }
 nav li {
     display: inline-block;
@@ -69,23 +70,30 @@ nav li {
     border-bottom: 2px solid black;
     margin-bottom: 25px;
 }
-/*.mainproject {
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-left: 25px;
-    background-repeat: no-repeat;
-    color: black;
-}
-.sideproject {
+.mainproject {
     display: flex;
-    background-image: url(http://placekitten.com/200/300);
-    background-repeat: no-repeat;
-    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+}
+.mainproject img {
+    width: 95vw;
+    height: auto;
+    object-fit: contain;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.sideprojects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     color: black;
-}*/
-
+    justify-content: space-evenly;
+}
+.sideprojects img {
+    width: 40vw;
+    height: auto;
+    object-fit: contain;
+}
 #aboutme, #projects, #contactme {
     background-color: white;
 }
