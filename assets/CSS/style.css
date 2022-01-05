@@ -2,16 +2,20 @@ nav {
     background-color: white;
     color: black;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     margin: 15px;
+    text-align: center;
 }
 nav h1 {
     font-size: 30px;
+    
 }
 div h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     background-image: url(https://cdn.pixabay.com/photo/2018/06/13/18/20/waves-3473335_960_720.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -33,18 +37,7 @@ nav li {
 .box p {
     flex: 1;
 }
-.section-title {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    font-size: 24px;
-    padding: 10px;
-    color: black;
-    background-color: white;
-    border-bottom: 2px solid black;
-    margin-bottom: 25px;
-    width: 30%;
-}
+
 @media screen and (min-width: 980px) {
     .box {
         flex-wrap: wrap;
@@ -57,23 +50,30 @@ nav li {
 #projects {
     /* only for id purposes */
 }
-.mainproject {
+.section-title {
+    font-size: 24px;
+    padding: 10px;
+    color: black;
+    background-color: white;
+    border-bottom: 2px solid black;
+    margin-bottom: 25px;
+}
+/*.mainproject {
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    flex: 1;
     margin-left: 25px;
     background-repeat: no-repeat;
     color: black;
 }
 .sideproject {
     display: flex;
-    flex-direction: row;
-  /*  background-image: url(http://placekitten.com/200/300); */
+    background-image: url(http://placekitten.com/200/300);
     background-repeat: no-repeat;
-    /* flex-grow: 1; */
+    flex-grow: 1;
     color: black;
-}
+}*/
 
 #aboutme, #projects, #contactme {
     background-color: white;
