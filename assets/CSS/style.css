@@ -1,75 +1,52 @@
 :root {
     --dark: rgb(27, 26, 26);
-    --teal: #0af3ef;
-    --lightteal: #8beeee;
-    --orange: rgb(241, 116, 44);
+    --teal: #5bccf6;
+    --yellow: #fcde67;
 }
 * {
-    background-color: white;
+    background-color: var(--yellow);
+    color: var(--dark);
 }
-nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 15px;
+header {
     text-align: center;
 }
 nav img {
-    margin: auto;
-    width: 100px;
-    height: 100px;
-    margin-bottom: 15px;
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
 }
 nav h1 {
     font-size: 30px;
     margin-bottom: 5px;
     line-height: 1.5;
-    border: 2px solid black;
+    border: 2px solid var(--dark);
     border-radius: 15px;
     background-color: var(--teal);
-    color: var(--dark);
 }
 div h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     background-image: url(https://cdn.pixabay.com/photo/2018/06/13/18/20/waves-3473335_960_720.jpg);
     background-repeat: no-repeat;
     background-position: center;
     font-size: 24px;
     padding-top: 50px;
     padding-bottom: 75px;
+    font-weight: bolder;
 }
 nav li {
     display: inline-block;
-    padding-left: 5px;
-}
-.box {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding: 10px;
-}
-.box p {
-    flex: 1;
-}
-
-#projects {
-    /* only for id purposes */
 }
 .section-title {
     font-size: 24px;
     padding: 10px;
-    color: black;
-    background-color: white;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid var(--dark);
     margin-bottom: 25px;
+    background-color: var(--teal);
+}
+#work {
+    background-color: var(--teal);
 }
 .mainproject {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
 }
 .mainproject img {
     width: 95vw;
@@ -82,11 +59,6 @@ nav li {
     opacity: 1;
 }
 .sideprojects {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    color: black;
-    justify-content: space-evenly;
     text-align: center;
 }
 .sideprojects img {
@@ -98,58 +70,39 @@ nav li {
 .sideprojects img:hover {
     opacity: 1;
 }
-@media screen and (min-width: 980px) {
-    nav {
-        flex-direction: row;
-        align-items: center;
-    }
+@media screen and (min-width: 700px) {
     nav h1 {
         font-size: 45px;
-        padding-left: 50px;
-        padding-right: 50px;
     }
     nav li {
-        justify-content: flex-end;
         font-size: 20px;
-    }
-    .box {
-        flex-direction: row;
-    }
-    .box p {
-        margin-left: 15px;
-    }
-    .box li {
-        margin-left: 15px;
     }
     .section-title {
         width: 30vw;
         border-right: 2px solid black;
+        border-bottom: none;
         font-size: 30px;
-    }
-    .mainproject {
-        flex-direction: column;
-        justify-content: flex-end;
-        margin-left: 15px;
-        font-size: 20px;
     }
     .mainproject img {
         width: 66vw;
-        object-fit: contain;
     }
     .sideprojects {
-        justify-content: flex-end;
         font-size: 20px;
     }
     .sideprojects img {
         width: 33vw;
         height: 25vh;
-        object-fit: contain;
     }
 }
-#aboutme, #projects, #contactme {
-    background-color: white;
-}
-
+/* @media screen and (min-width: 960px) {
+    .mainproject img {
+        width: 66vw;
+    }
+    .sideprojects img {
+        width: 25vw;
+        height: 25vh;
+    }
+} */
 footer {
     text-align: center;
     line-height: 1.5;
