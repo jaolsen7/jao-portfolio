@@ -84,7 +84,7 @@ nav li {
         font-size: 30px;
     }
     .mainproject img {
-        width: 66vw;
+        width: 50vw;
     }
     .sideprojects {
         font-size: 20px;
@@ -94,15 +94,15 @@ nav li {
         height: 25vh;
     }
 }
-/* @media screen and (min-width: 960px) {
-    .mainproject img {
+@media screen and (min-width: 960px) {
+    /* .mainproject img {
         width: 66vw;
-    }
+    } */
     .sideprojects img {
-        width: 25vw;
-        height: 25vh;
+        width: 20vw;
+        height: 20vh;
     }
-} */
+}
 footer {
     text-align: center;
     line-height: 1.5;
