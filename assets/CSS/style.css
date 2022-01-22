@@ -3,7 +3,7 @@
     --teal: #5bccf6;
     --yellow: #fcde67;
 }
-* {
+body {
     background-color: var(--yellow);
     color: var(--dark);
 }
@@ -23,14 +23,21 @@ nav h1 {
     border-radius: 15px;
     background-color: var(--teal);
 }
+.wave-div {
+    position: relative;
+}
 div h1 {
-    background-image: url(https://cdn.pixabay.com/photo/2018/06/13/18/20/waves-3473335_960_720.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
+    position: absolute;
+    color: white;
     font-size: 24px;
     padding-top: 50px;
     padding-bottom: 75px;
     font-weight: bolder;
+}
+.waves {
+    object-fit: cover;
+    width: 50rem;
+    height: 8rem;
 }
 nav li {
     display: inline-block;
@@ -49,7 +56,7 @@ nav li {
     text-align: center;
 }
 .mainproject img {
-    width: 95vw;
+    width: 20rem;
     height: auto;
     object-fit: contain;
     margin-bottom: 10px;
@@ -62,9 +69,8 @@ nav li {
     text-align: center;
 }
 .sideprojects img {
-    width: 40vw;
-    height: auto;
-    object-fit: contain;
+    width: 15rem;
+    height: 15rem;
     opacity: .5;
 }
 .sideprojects img:hover {
@@ -83,24 +89,14 @@ nav li {
         border-bottom: none;
         font-size: 30px;
     }
-    .mainproject img {
-        width: 50vw;
-    }
     .sideprojects {
         font-size: 20px;
     }
-    .sideprojects img {
-        width: 33vw;
-        height: 25vh;
-    }
 }
 @media screen and (min-width: 960px) {
-    /* .mainproject img {
-        width: 66vw;
-    } */
-    .sideprojects img {
-        width: 20vw;
-        height: 20vh;
+    .waves {
+        width: 82rem;
+        height: 10rem;
     }
 }
 footer {
