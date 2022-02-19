@@ -69,9 +69,10 @@ nav li {
     text-align: center;
 }
 .sideprojects img {
-    width: 15rem;
-    height: 15rem;
+    width: 10rem;
+    height: 10rem;
     opacity: .5;
+    object-fit: cover;
 }
 .sideprojects img:hover {
     opacity: 1;
